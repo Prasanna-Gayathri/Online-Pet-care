@@ -1,0 +1,38 @@
+.payment-confirmation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full height for centering */
+    background-color: #f9f9f9; /* Light background color */
+    padding: 20px;
+    text-align: center;
+}
+
+.payment-confirmation h2 {
+    font-size: 2rem;
+    color: #4CAF50; /* Green color for success */
+    margin-bottom: 15px;
+}
+
+.payment-confirmation p {
+    font-size: 1.2rem;
+    color: #333; /* Darker text for readability */
+    margin: 10px 0;
+}
+
+.payment-confirmation button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50; /* Green background for buttons */
+    color: white; /* White text color */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.payment-confirmation button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}

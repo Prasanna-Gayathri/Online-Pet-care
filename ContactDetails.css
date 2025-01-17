@@ -1,0 +1,74 @@
+/* BookingForm.css */
+.booking-form {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque white background */
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 50px auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden; /* Ensure that child elements don't overflow */
+}
+
+.booking-form::before {
+    content: "";
+    background-image: url('../assets/booking.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.1; /* Further reduced opacity */
+    z-index: 1; /* Ensure it stays behind the content */
+}
+
+.booking-form h2 {
+    color: #333;
+    position: relative; /* Allow positioning relative to the parent */
+    z-index: 2; /* Ensure it stays above the background */
+}
+
+.booking-form p {
+    color: #555;
+    position: relative; /* Allow positioning relative to the parent */
+    z-index: 2; /* Ensure it stays above the background */
+}
+
+.booking-form label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+    position: relative; /* Allow positioning relative to the parent */
+    z-index: 2; /* Ensure it stays above the background */
+}
+
+.booking-form input,
+.booking-form select {
+    width: calc(100% - 20px); /* Align width with padding */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px; /* Add spacing between inputs */
+    position: relative; /* Allow positioning relative to the parent */
+    z-index: 2; /* Ensure it stays above the background */
+}
+
+.booking-form button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    position: relative; /* Allow positioning relative to the parent */
+    z-index: 2; /* Ensure it stays above the background */
+}
+
+.booking-form button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}

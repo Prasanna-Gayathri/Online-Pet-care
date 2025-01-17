@@ -1,0 +1,86 @@
+.pet-medicine-slip-container {
+    position: relative;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 238, 204, 0.8));
+    padding: 60px;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.pet-medicine-slip-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../assets/petcompany.jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.3; /* Adjusted opacity for the background image */
+    z-index: 0;
+}
+
+.pet-medicine-slip-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.8rem;
+    color: #FF6347; /* Tomato color */
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+    position: relative;
+    z-index: 1; /* Make sure title is above background */
+}
+
+.pet-medicine-slip-intro {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 25px;
+    line-height: 1.8;
+    font-style: italic;
+    z-index: 1;
+}
+
+.pet-medicine-slip-section {
+    background-color: rgba(255, 255, 255, 0.9); /* White background with slight opacity */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease;
+    z-index: 1;
+}
+
+.pet-medicine-slip-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #4A90E2; /* Light Blue */
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.pet-medicine-slip-section p, 
+.pet-medicine-slip-section ul {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    margin: 0 0 10px;
+}
+
+.pet-medicine-slip-thankyou {
+    font-weight: bold;
+    color: #FF6347; /* Tomato color */
+    margin-top: 30px;
+    z-index: 1;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideIn {
+    0% { transform: translateY(30px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}

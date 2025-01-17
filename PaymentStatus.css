@@ -1,0 +1,26 @@
+.payment-status {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.payment-status h2 {
+    text-align: center;
+}
+
+.invoice {
+    margin: 20px 0;
+}
+
+.invoice p {
+    margin: 5px 0;
+}
+
+.invoice h3 {
+    color: #28a745;
+    text-align: center;
+}
+
