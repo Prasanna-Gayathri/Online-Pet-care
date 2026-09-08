@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rural Reach Service Request</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Rural Reach Service Request</h1>
+  </header>
+  <form id="ruralReachForm">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" required>
+
+    <label for="service">Service Required:</label>
+    <select id="service" required>
+      <option value="plumbing">Plumbing</option>
+      <option value="carpentry">Carpentry</option>
+      <option value="electrician">Electrician</option>
+    </select>
+
+    <label for="issue">Describe the Issue:</label>
+    <textarea id="issue" required></textarea>
+
+    <label for="address">Address:</label>
+    <textarea id="address" required></textarea>
+
+    <label for="date">Preferred Date:</label>
+    <input type="date" id="date" required>
+
+    <button type="submit">Submit Request</button>
+  </form>
+
+  <script src="rural-reach.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medicine Delivery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Request Medicine Delivery</h1>
+  </header>
+  <form id="medicineDeliveryForm">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" required>
+    
+    <label for="medicine">Medicine Required:</label>
+    <input type="text" id="medicine" required>
+    
+    <label for="med-id">Medicine ID:</label>
+    <input type="text" id="med-id" required>
+    
+    <label for="address">Delivery Address:</label>
+    <textarea id="address" required></textarea>
+    
+    <button type="submit">Request Delivery</button>
+  </form>
+
+  <script src="medicine.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+// service-provider-login.js
+
+document.getElementById('login-form').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent form submission
+    
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    
+    // Define valid credentials for the service provider
+    const validUsername = "gayathri@gmail.com";
+    const validPassword = "Gg3333";
+    
+    // Check if credentials match
+    if (username === validUsername && password === validPassword) {
+        // Redirect to the service provider dashboard after successful login
+        window.location.href = "provider-dashboard.html";  // Modify with the actual page for dashboard
+    } else {
+        // Display an error message if credentials don't match
+        document.getElementById('error-message').style.display = 'block';
+    }
+});
